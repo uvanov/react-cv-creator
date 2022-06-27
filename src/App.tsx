@@ -1,10 +1,11 @@
 import React from 'react';
+import Router from './components/Router/Router';
 
 const App: React.FC = () => {
   return (
-    <div>
-      React CV Creator
-    </div>
+    <>
+      <Router />
+    </>
   );
 };
 
