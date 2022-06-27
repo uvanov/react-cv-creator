@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import Layout from '../Layout/Layout';
-import CreateResume from '../../pages/CreateResume';
-import Resume from '../../pages/Resume';
+import Layout from '../components/Layout/Layout';
+import CreateResume from '../pages/CreateResume';
+import Resume from '../pages/Resume';
 
 const Router: React.FC = () => {
   return (
