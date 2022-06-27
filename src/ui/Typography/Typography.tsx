@@ -3,7 +3,7 @@ import StyledTypography from './Typography.styles';
 
 import Props from './Typography.typings';
 
-const Typography: React.FC<Readonly<Props>> = (props) => (
+const Typography: React.FC<Readonly<Props>> = props => (
   <StyledTypography { ...props } />
 );
 

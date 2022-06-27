@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 import Props from '../Flex.typings';
 
 export default styled.div<Props>`
-  display: ${props => props.inline ? 'inline-flex' : 'flex'};
+  display: ${props => (props.inline ? 'inline-flex' : 'flex')};
 
   ${props => props.direction && css`
     flex-direction: ${props.direction};
