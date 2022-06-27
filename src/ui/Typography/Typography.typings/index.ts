@@ -9,4 +9,4 @@ export default interface TypographyProps {
   weight?: number | 'bold',
   align?: 'left' | 'center' | 'right',
   children: ReactNode
-};
+}

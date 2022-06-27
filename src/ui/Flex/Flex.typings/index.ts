@@ -7,4 +7,4 @@ export default interface FlexProps {
   align?: 'flex-start' | 'center' | 'flex-end',
   gap?: number | { x: number, y: number },
   children: ReactNode;
-};
+}
