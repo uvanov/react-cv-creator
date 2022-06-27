@@ -35,6 +35,8 @@
       "error",
       "always"
     ],
+    "quotes": ["error", "single"],
+    "jsx-quotes": [2, "prefer-single"],
     "no-console": "off",
     "no-loop-func": [
       "error"
