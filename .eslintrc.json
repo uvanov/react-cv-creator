@@ -37,6 +37,15 @@
     ],
     "quotes": ["error", "single"],
     "jsx-quotes": [2, "prefer-single"],
+    "object-curly-spacing": ["error", "always", {
+      "objectsInObjects": true
+    }],
+    "react/jsx-curly-spacing": [2, {
+      "when": "always",
+      "allowMultiline": false,
+      "children": true,
+      "spacing": {"objectLiterals": "never"}
+    }],
     "no-console": "off",
     "no-loop-func": [
       "error"
