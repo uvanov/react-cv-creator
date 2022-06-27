@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledTypography } from './Typography.styles';
+import StyledTypography from './Typography.styles';
 
 import Props from './Typography.typings';
 

@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 import Props from '../Typography.typings'
 
-export const StyledTypography = styled.p<Props>`
+export default styled.p<Props>`
   ${props => props.italic && css`
     font-style: italic;
   `}
