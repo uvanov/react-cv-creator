@@ -15,5 +15,12 @@ export default styled.p<Props>`
   ${props => props.align && css`
     text-align: ${props.align};
   `}
+  
+  ${props => props.variant && css`
+    font-size: ${props.theme.typography.variants[props.variant].size}px;
+    ${props.theme.typography.variants[props.variant].bold && css`
+      font-weight: bold;
+    `}
+  `}
 `;
 
