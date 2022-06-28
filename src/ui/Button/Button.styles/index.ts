@@ -26,16 +26,18 @@ export default styled.button<Props>`
   
   ${props => props.size === 'small' && css`
     height: 30px;
-    width: 80px;
+    padding: 0 10px;
   `}
 
   ${props => props.size === 'middle' && css`
+    font-size: 15px;
     height: 40px;
-    width: 100px;
+    padding: 0 20px;
   `}
 
   ${props => props.size === 'large' && css`
+    font-size: 17px;
     height: 45px;
-    width: 130px;
+    padding: 0 30px;
   `}
 `;
