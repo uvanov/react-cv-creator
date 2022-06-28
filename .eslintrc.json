@@ -25,16 +25,14 @@
       2
     ],
     "react/jsx-uses-vars": "error",
-    "no-unused-vars": [
+    "@typescript-eslint/no-unused-vars": [
       "error",
       {
         "caughtErrorsIgnorePattern": "^ignore"
       }
     ],
-    "semi": [
-      "error",
-      "always"
-    ],
+    "semi": ["off"],
+    "@typescript-eslint/semi": ["error", "always"],
     "quotes": ["error", "single"],
     "jsx-quotes": [2, "prefer-single"],
     "object-curly-spacing": ["error", "always", {
