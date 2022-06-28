@@ -1,4 +1,4 @@
-import themeConfig from '../lib/theme';
+import themeConfig from '@lib/theme';
 
 type ThemeConfig = typeof themeConfig;
 

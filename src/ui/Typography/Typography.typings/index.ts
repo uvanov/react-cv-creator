@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import themeConfig from '../../../lib/theme';
+import themeConfig from '@lib/theme';
 
 type TypographyVariants = keyof typeof themeConfig.typography.variants;
 

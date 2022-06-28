@@ -5,7 +5,7 @@ import {
   ThemeProvider as Provider
 } from '@emotion/react';
 
-import themeConfig from '../lib/theme';
+import themeConfig from '@lib/theme';
 
 const ThemeProvider = props => (
   <Provider theme={ themeConfig }>

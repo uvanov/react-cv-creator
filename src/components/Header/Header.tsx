@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typography } from '../../ui';
+import { Typography } from '@ui/index';
 
 import StyledHeader from './Header.styles';
 
