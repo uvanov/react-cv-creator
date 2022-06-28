@@ -6,13 +6,16 @@ import StyledHeader from './Header.styles';
 
 const Header: React.FC = () => {
   return (
-    <StyledHeader justify='space-between'>
+    <StyledHeader
+      justify='center'
+      align='center'
+    >
       <Typography
         variant='large'
-        weight='bold'
       >
         React CV Creator
       </Typography>
+
     </StyledHeader>
   );
 };
