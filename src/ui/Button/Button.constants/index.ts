@@ -14,4 +14,15 @@ const outlined: ButtonVariantFunction = theme => css`
   background-color: transparent;
 `;
 
-export const BUTTON_VARIANTS = { outlined, primary };
+const hybrid: ButtonVariantFunction = theme => css`
+  color: ${theme.palette.darkskyblue};
+  border: 2px solid ${theme.palette.darkskyblue};
+  background-color: transparent;
+  
+  &:hover {
+    background-color: ${theme.palette.darkskyblue};
+    color: ${theme.palette.white};
+  }
+`;
+
+export const BUTTON_VARIANTS = { outlined, primary, hybrid };
