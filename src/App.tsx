@@ -1,8 +1,3 @@
-/*
-* TODO:
-*  - Create theme object
-*  - Create Button Component
-* */
 import React from 'react';
 
 import Router from '@providers/Router';
