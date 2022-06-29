@@ -17,6 +17,7 @@ const ResumeCard: React.FC<Readonly<Props>> = props => (
       <Button
         variant='hybrid'
         size='small'
+        // todo: Add redirect to cv by Link from react-router
       >
         OPEN
       </Button>

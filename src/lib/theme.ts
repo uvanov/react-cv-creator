@@ -4,7 +4,8 @@ const themeConfig = {
     white: '#ffffff',
     skyblue: '#DAEDFF',
     darkskyblue: '#3C73A6',
-    bluegray: '#3D5266'
+    bluegray: '#3D5266',
+    error: '#e92d2d'
   },
   typography: {
     variants: {

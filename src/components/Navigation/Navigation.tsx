@@ -8,10 +8,11 @@ import { Button } from '@ui/index';
 import ResumeCard from '@components/ResumeCard/ResumeCard';
 
 const Navigation: React.FC = () => {
+
   return (
     <StyledNavigation>
       <Button
-        variant='outlined'
+        variant='primary'
         size='large'
         fullWidth
       >
@@ -23,7 +24,7 @@ const Navigation: React.FC = () => {
         columnGap={ 100 }
         rowGap={ 10 }
       >
-        <ResumeCard/>
+        <ResumeCard link='https://google.com' imageUrl='https://img001.prntscr.com/file/img001/hHsFNH4VT_ugaWSRwFCRHw.png'/>
       </NavigationGrid>
 
     </StyledNavigation>
