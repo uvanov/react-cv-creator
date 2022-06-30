@@ -7,7 +7,7 @@ import {
   InvalidLabel
 } from './Input.styles';
 
-const Input: React.FC<Readonly<Props>> = props => {
+const Input: React.FC<Readonly<Props>> = ({ placeholder, ...props }) => {
   return (
     <InputWrapper
       fullWidth={ props.fullWidth }
@@ -15,9 +15,10 @@ const Input: React.FC<Readonly<Props>> = props => {
       <StyledInput { ...props }/>
       <InvalidLabel
         variant='small'
-        show={ props.invalid }
+        invalid={ props.invalid }
       >
-        Invalid value
+        { placeholder }
+        { props.required && ' *' }
       </InvalidLabel>
     </InputWrapper>
   );

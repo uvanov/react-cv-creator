@@ -26,23 +26,34 @@ export const StyledInput = styled.input<Props>`
   transition: box-shadow .3s;
   
   ${props => props.invalid && css`
-    box-shadow: 0 0 10px ${hexToRGB(props.theme.palette.error, .5)};
+    border: 1px solid ${props.theme.palette.error};
   `}
 `;
 
-export const InvalidLabel = styled(Typography)<{ show?: boolean }>`
+export const InvalidLabel = styled(Typography)<{ invalid?: boolean }>`
   position: absolute;
-  top: -20px;
+  top: -9px;
   left: 20px;
-  color: ${props => props.theme.palette.error};
+  color: ${props => props.theme.palette.black};
+  transition: color .2s;
+  z-index: 1;
   
-  transition: transform .2s, opacity .2s;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    transform: translateX(-4px);
+    
+    display: block;
+    background-color: white;
+    width: 120%;
+    height: 10px;
+
+    z-index: -1;
+    
+  }
   
-  transform: translateY(10px);
-  opacity: 0;
-  
-  ${props => props.show && css`
-    transform: translateY(0);
-    opacity: 1;
+  ${props => props.invalid && css`
+    color: ${props.theme.palette.error};
   `}
 `;
