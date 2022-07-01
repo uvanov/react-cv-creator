@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Props from './ResumeCard.typings';
-import { Button } from '@ui/index';
+import { Button } from '@mui/material';
 import {
   ResumeCardCover,
   StyledResumeCard
@@ -15,7 +15,7 @@ const ResumeCard: React.FC<Readonly<Props>> = props => (
       link={ props.link }
     >
       <Button
-        variant='hybrid'
+        variant='contained'
         size='small'
         // todo: Add redirect to cv by Link from react-router
       >
