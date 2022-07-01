@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
-import Input from '@ui/Input/Input';
+import React from 'react';
+
+import { Typography } from '@mui/material';
+import CreateForm from '@components/CreateForm/CreateForm';
+import StyledCreateResume from './CreateResume.styles';
 
 const CreateResume: React.FC = () => {
-  const [value, setValue] = useState('');
   return (
-    <div>
-      Create Resume
-      <Input
-        value={ value }
-        placeholder='Placeholder'
-        onChange={ event => setValue(event.target.value) }
-      />
-    </div>
+    <StyledCreateResume>
+      <Typography
+        variant='h6'
+        fontWeight='bold'
+      >
+        Create New Resume
+      </Typography>
+      <CreateForm />
+    </StyledCreateResume>
   );
 };
 
