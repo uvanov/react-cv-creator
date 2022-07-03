@@ -1,13 +1,18 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import { Button, TextField } from '@mui/material';
+import {
+  Chip,
+  Divider,
+  TextField
+} from '@mui/material';
 import { formInitialValues } from './CreateForm.constants';
 
 import { Grid } from '@ui/index';
+import SkillSelect from '@components/SkillSelect/SkillSelect';
 
 const CreateForm: React.FC = () => {
 
-  // const [photo, setPhotoFile] = useState('')
+
 
   const formik = useFormik({
     initialValues: formInitialValues,
@@ -16,8 +21,12 @@ const CreateForm: React.FC = () => {
     }
   });
 
+
   return (
     <form onSubmit={ formik.handleSubmit }>
+      <Divider>
+        <Chip label='INFORMATION'/>
+      </Divider>
       <Grid
         columns={ 3 }
         columnGap={ 50 }
@@ -49,7 +58,6 @@ const CreateForm: React.FC = () => {
           onChange={ formik.handleChange }
           InputLabelProps={{ shrink: true }}
         />
-
         <TextField
           type='file'
           id='information.photo'
@@ -59,21 +67,11 @@ const CreateForm: React.FC = () => {
           onChange={ event => console.log(event) }
           InputLabelProps={{ shrink: true }}
         />
-        <Button
-          variant='contained'
-          component='label'
-        >
-          Upload File
-          <input
-            onChange={ event => console.log(event) }
-            type='file'
-            hidden
-          />
-        </Button>
-        <Button type='submit' variant='contained'>
-          submit
-        </Button>
       </Grid>
+      <Divider>
+        <Chip label='SKILLS' />
+      </Divider>
+      <SkillSelect />
     </form>
   );
 };
