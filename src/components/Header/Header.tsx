@@ -1,22 +1,32 @@
 import React from 'react';
-
-import { Typography } from '@ui/index';
+import { useTheme } from '@emotion/react';
+import {
+  Box,
+  Typography
+} from '@mui/material';
 
 import StyledHeader from './Header.styles';
 
 const Header: React.FC = () => {
+
+  const theme = useTheme();
+
   return (
-    <StyledHeader
+    <Box
+      component={ StyledHeader }
       justify='center'
       align='center'
+      bgcolor={ theme.palette.primary.light }
     >
       <Typography
-        variant='large'
+        variant='h5'
+        color='primary.dark'
+        fontWeight='bold'
       >
         React CV Creator
       </Typography>
 
-    </StyledHeader>
+    </Box>
   );
 };
 

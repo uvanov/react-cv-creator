@@ -21,7 +21,7 @@ export const StyledResumeCard = styled.div<Pick<Props, 'imageUrl'>>`
 
 export const ResumeCardCover = styled(Flex)<Pick<Props, 'link'>>`
   height: 250px;
-  background-color: ${props => hexToRGB(props.theme.palette.white, .8)};
+  background-color: ${hexToRGB('#000000', .8)};
   opacity: 0;
   transition: .3s opacity;
 `;
